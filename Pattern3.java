@@ -5,20 +5,16 @@ public class Pattern3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int n = 3;
-		
-		for(int i=0;i<n;i++) {
-			
-			int temp =n;
-			for(int j=3;j>0;j--) {
-			
-				for(int k=n;k>=j;k--) {
-					System.out.print(temp);
+		int temp,n = 3;
+		temp =n;
+		for(int i=n;i>=1;i--) {
+			for(int j=n;j>=1;j--) {	
+				for(int k=1;k<=i;k++) {
+					System.out.print(j);
 				}
-				temp--;
-				
 			}
-			System.out.println(" ");
+			
+			System.out.print(" $ ");
 		}
 	}
 
